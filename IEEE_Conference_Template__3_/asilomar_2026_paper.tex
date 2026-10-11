@@ -45,9 +45,10 @@ shafiqul@iastate.edu}
 
 \begin{abstract}
 Automatic speech recognition (ASR) pipelines often
-normalize transcripts by removing filled pauses,
-punctuation, and colloquial expressions, potentially
-discarding cues useful for dialogue act classification.
+normalize transcripts by removing filled pauses
+and punctuation and expanding colloquial forms,
+potentially discarding cues useful for dialogue
+act classification.
 We evaluate nine transcript conditions across six
 classifiers (TF-IDF logistic regression, RoBERTa,
 BERT, ALBERT, GPT-2, and BiLSTM) and three conversational
@@ -402,8 +403,9 @@ The complete primary-seed nine-condition grid is
 available in the repository. Across its 18
 model--corpus combinations, synthetic ASR noise
 degrades all 18 ($\Delta=0.033$--$0.225$).
-Punctuation removal and light cleaning degrade 11
-and leave seven unchanged ($\Delta=0$--$0.084$).
+Punctuation removal and light cleaning each degrade
+11 combinations and leave seven unchanged
+($\Delta=0$--$0.084$ for each operation).
 Colloquial expansion and discourse-marker removal
 have mixed, smaller effects ($|\Delta|\leq0.011$);
 alphanumeric filtering is model-sensitive
