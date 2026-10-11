@@ -195,7 +195,9 @@ release's first tag as the primary class. Table~\ref{tab:datasets} summarizes
 the datasets after removing labels with fewer than
 50 instances in combined train--test counts. Switchboard uses a conversation-level
 80/20 split (seed 42), while MRDA and HVB use their
-release-defined splits.
+release-defined splits. The MRDA release describes its
+canonical partition as meeting-disjoint, although the
+reformatted records do not expose meeting identifiers.
 
 \begin{table}[t]
 \caption{Dataset statistics after rare-label filtering
@@ -215,7 +217,7 @@ Labels & 27 & 12 & 16 \\
 Canonical filler rate$^{a}$ & 40.5\% & 15.9\% & 5.7\% \\
 \bottomrule
 \end{tabularx}
-\vspace{1pt}\parbox{0.95\columnwidth}{\tiny $^{a}$Utterances containing \textit{um}, \textit{uh}, or \textit{erm}.}
+\vspace{1pt}\parbox{0.95\columnwidth}{\tiny $^{a}$Utterances containing \textit{um}, \textit{uh}, or \textit{erm}; the Switchboard rate is 17,703/43,763 utterances.}
 \end{table}
 
 \textbf{Models.}
@@ -264,9 +266,6 @@ The original filler lexicon contains
 \textit{uhhuh}, \textit{uh-huh}, and
 \textit{huh}. The restricted lexicon retains
 only \textit{um}, \textit{uh}, and \textit{erm}.
-A separate punctuation--filler factorial control
-evaluates removal of each feature and both together
-using punctuation-aware TF-IDF+LR on MRDA.
 
 An additional \texttt{pragmatic\_norm} control
 applies lowercasing and colloquial expansion
@@ -323,7 +322,9 @@ Bonferroni correction across 36 comparisons; 21
 remain significant at $\alpha=0.05/36$.
 Because utterances within conversations are
 dependent, McNemar results are supplementary
-to cluster-level uncertainty estimates.
+to cluster-level uncertainty estimates. Individual
+$p$-values and complete condition-level outputs
+are included in the public repository.
 
 Implementation scripts and supplementary
 materials are provided in a public project
@@ -381,7 +382,8 @@ SLUE-HVB    & TF-IDF+LR & 0.713 & 0.660 & 0.661 \\
 
 \subsection{Multi-Seed Normalization Effects}
 
-Table~\ref{tab:grid} reports Macro-F1 across five seeds
+Table~\ref{tab:grid} reports selected primary conditions
+across five seeds
 for the neural models and a deterministic TF-IDF+LR
 baseline. Under the original preprocessing protocols,
 heavy normalization reduces Macro-F1 in all 75 paired
@@ -395,6 +397,18 @@ from 0.440 to 0.449 after filler removal but falls
 to 0.387 under heavy normalization. Thus, heavy
 normalization produces more consistent degradation
 than filler removal alone.
+
+The complete primary-seed nine-condition grid is
+available in the repository. Across its 18
+model--corpus combinations, synthetic ASR noise
+degrades all 18 ($\Delta=0.033$--$0.225$).
+Punctuation removal and light cleaning degrade 11
+and leave seven unchanged ($\Delta=0$--$0.084$).
+Colloquial expansion and discourse-marker removal
+have mixed, smaller effects ($|\Delta|\leq0.011$);
+alphanumeric filtering is model-sensitive
+($\Delta=-0.005$--$0.209$). The punctuation-aware
+control below explains the default TF-IDF result.
 
 
 \subsection{Punctuation and Filler-Lexicon Controls}
@@ -441,7 +455,8 @@ utterances falls from 43.1\% to 0.5\%.
 Across the filtered SLUE-HVB data, the original
 lexicon empties 38 of 50 backchannel utterances,
 whereas the restricted lexicon empties none; only
-16 backchannels occur in the held-out test set. Accordingly, filler-removal degradation
+16 backchannels occur in the held-out test set.
+Accordingly, filler-removal degradation
 approaches zero for the four evaluated neural models
 with non-anomalous primary-seed baselines
 ($\Delta=-0.006$ to $0.001$).
@@ -512,9 +527,9 @@ filler-removal and heavy-normalization differences are
 0.011 $[0.003,0.020]$ and 0.017 $[0.009,0.027]$,
 respectively. These are nominal 95\% intervals without
 multiplicity adjustment; an F1 decrease alone does
-not establish statistical significance. The primary
-MRDA grid lacks recoverable meeting identifiers. On a
-separate 60/15 meeting-disjoint reconstruction, heavy-
+not establish statistical significance. The reformatted
+primary MRDA records lack meeting identifiers. On a
+separate exploratory 60/15 meeting-disjoint reconstruction, heavy-
 normalization intervals exclude zero for four of five
 neural models, while filler-only effects are split-sensitive.
 
@@ -542,7 +557,7 @@ F1-score. BC denotes SLUE-HVB backchannels.}
 Switchboard & b  & P  & 0.558 & 0.436 \\
             & b  & F1 & 0.433 & 0.365 \\
 \midrule
-MRDA        & fh & R  & 0.495 & 0.326 \\
+MRDA        & fh & R  & 0.495 & 0.330 \\
             & h  & R  & 0.313 & 0.104 \\
 \midrule
 SLUE-HVB    & BC & P  & 0.353 & 0.092 \\
@@ -633,7 +648,9 @@ backchannels and punctuation are preserved.
 
 \textbf{Limitations.}
 The study is limited to three English-language
-corpora. The original Switchboard heavy-normalization
+corpora. SLUE-HVB findings concern a first-tag,
+single-label reduction and do not evaluate its full
+multi-label dialogue-act task. The original Switchboard heavy-normalization
 implementation additionally removes \textit{like} and \textit{youknow},
 and harmonized lexicon experiments use a single seed.
 On Switchboard, spaced backchannel expressions such
@@ -641,8 +658,10 @@ as \textit{Uh - huh} are partially affected by the
 strict lexicon, which removes \textit{uh} but retains
 \textit{huh}. Thus, identical normalization rules
 do not necessarily remove equivalent linguistic cues
-across corpora. The primary MRDA partition is
-meeting-disjoint but not speaker-disjoint, and
+across corpora. According to the release-defined
+canonical split, the primary MRDA partition is
+meeting-disjoint but not speaker-disjoint; because
+meeting identifiers are absent from the reformatted records,
 meeting-level confidence intervals are unavailable
 for that primary split. The alternative MRDA
 neural comparisons use different training scripts,
