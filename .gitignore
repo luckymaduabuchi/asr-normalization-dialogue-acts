@@ -8,13 +8,16 @@ mrda_icsi_audio/
 /utterances_with_ablations.csv
 results_mrda/utterances_mrda.csv
 results_hvb/utterances_hvb.csv
+results_hvb/hvb_filtered_index.csv
 results_mrda_real/scoped_utterances.csv
 results_mrda_real/test_df_ordered.csv
 results_mrda_real/scoped5_backup/
 results_mrda_meetingsplit/scoped_utterances_with_conditions.csv
 
 # Manuscript sources and templates
-IEEE_Conference_Template__3_/
+IEEE_Conference_Template__3_/*
+!IEEE_Conference_Template__3_/asilomar_2026_paper.tex
+!IEEE_Conference_Template__3_/asilomar_refs.bib
 /conll.tex
 /custom.bib
 *.pdf

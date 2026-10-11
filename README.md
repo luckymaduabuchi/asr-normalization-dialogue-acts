@@ -19,12 +19,16 @@ BERT, ALBERT, GPT-2, BiLSTM) and three corpora (Switchboard, ICSI MRDA, SLUE-HVB
   `mrda_meetingdisjoint_worker.py`.
 - **Statistics:** `significance_tests*.py`, `full_grid_significance.py`
   (McNemar, cluster-level permutation tests, cluster bootstrap intervals).
+- **Reproducibility controls:** `reproduce_paper_controls.py` regenerates the
+  punctuation-aware TF-IDF experiment, filler/backchannel counts, and the
+  Switchboard extra-discourse-token control in `results_controls/`.
 - **Results:** every `results_*/` directory holds `metrics_summary.csv`, the test
   labels (`y_test_ids.npy`) and per-condition predictions (`preds_<condition>.npy`),
   so all reported metrics and tests can be recomputed without retraining.
   `results_multiseed*/` hold the additional seeds.
 
 Directories containing a `SUPERSEDED.md` hold earlier results that are not used.
+The manuscript source and bibliography are in `IEEE_Conference_Template__3_/`.
 
 ## What is not included
 

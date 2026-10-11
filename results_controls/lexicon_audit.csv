@@ -1,0 +1,4 @@
+corpus,n_utterances,canonical_filler_utterances,canonical_filler_rate,backchannel_utterances,backchannels_emptied_original_lexicon,backchannels_emptied_restricted_lexicon,test_backchannel_utterances,test_backchannels_emptied_original_lexicon,test_backchannels_emptied_restricted_lexicon
+switchboard,43763,17703,0.4045197998309074,4118,0,0,0,0,0
+mrda,91769,14578,0.15885538689535683,12825,5525,66,2219,911,15
+hvb,17406,989,0.056819487533034584,50,38,0,16,12,0
