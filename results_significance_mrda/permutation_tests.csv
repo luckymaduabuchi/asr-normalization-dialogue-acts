@@ -1,0 +1,3 @@
+comparison,observed_macro_f1_delta,n_permutations,p_two_sided
+gold_text - rm_fillers_only,0.031249865724489956,2000,0.0005
+gold_text - clean_heavy,0.0306710584182327,2000,0.0

@@ -1,0 +1,6 @@
+corpus,split,n_utterances,reference_normalization,wer_pct,hits,substitutions,deletions,insertions
+HVB,train,11303,lowercase+strip_punct+collapse_whitespace,17.71,68849,7065,6246,1238
+HVB,test,6103,lowercase+strip_punct+collapse_whitespace,18.27,36223,3763,3378,780
+HVB,train+test (combined),17406,lowercase+strip_punct+collapse_whitespace,17.9,105072,10828,9624,2018
+MRDA,full 75-meeting pool,100513,lowercase+strip_punct+collapse_whitespace,41.73,456998,121092,111419,55255
+MRDA,meeting-disjoint test partition (15 meetings),21350,lowercase+strip_punct+collapse_whitespace,41.01,99117,25570,23423,11746

@@ -1,0 +1,33 @@
+# Raw corpora and audio (obtain from the original sources; see README)
+data/
+mrda_icsi_audio/
+
+# Utterance tables containing corpus transcript text (regenerate with the prepare scripts)
+/utterances.csv
+/utterances_text_conditions.csv
+/utterances_with_ablations.csv
+results_mrda/utterances_mrda.csv
+results_hvb/utterances_hvb.csv
+results_mrda_real/scoped_utterances.csv
+results_mrda_real/test_df_ordered.csv
+results_mrda_real/scoped5_backup/
+results_mrda_meetingsplit/scoped_utterances_with_conditions.csv
+
+# Manuscript sources and templates
+IEEE_Conference_Template__3_/
+/conll.tex
+/custom.bib
+*.pdf
+*.pptx
+
+# Training artifacts
+*.log
+*.joblib
+tmp_*/
+__pycache__/
+*.pyc
+
+# Local tooling
+.claude/
+.agents/
+.codex/

@@ -1,0 +1,9 @@
+comparison,baseline_only_correct,other_only_correct,statistic,p_value
+gold_text vs gold_alpha_text,0,0,0.0,1.0
+gold_text vs rm_punct_only,0,0,0.0,1.0
+gold_text vs norm_colloq_only,0,0,0.0,1.0
+gold_text vs rm_discourse_only,430,271,271.0,2.065200175673699e-09
+gold_text vs rm_fillers_only,1665,443,443.0,7.950921864125354e-166
+gold_text vs clean_light,0,0,0.0,1.0
+gold_text vs clean_heavy,1680,441,441.0,1.423525297089699e-169
+gold_text vs asr_noise,2290,792,792.0,4.9565409499847754e-167

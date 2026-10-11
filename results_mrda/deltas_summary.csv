@@ -1,0 +1,9 @@
+delta,macro_f1_delta,micro_f1_delta,accuracy_delta
+gold_text - gold_alpha_text,0.0,0.0,0.0
+gold_text - rm_punct_only,0.0,0.0,0.0
+gold_text - norm_colloq_only,0.0,0.0,0.0
+gold_text - rm_discourse_only,0.0036897547901873495,0.009519817985869983,0.009519817985869983
+gold_text - rm_fillers_only,0.044769509125238416,0.07316489043228358,0.07316489043228358
+gold_text - clean_light,0.0,0.0,0.0
+gold_text - clean_heavy,0.04765919002543578,0.07418273260687347,0.07418273260687347
+gold_text - asr_noise,0.10629671457598105,0.08968985750209557,0.08968985750209557

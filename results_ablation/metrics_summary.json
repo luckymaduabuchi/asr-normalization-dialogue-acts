@@ -1,0 +1,139 @@
+{
+  "dataset": "utterances_with_ablations.csv",
+  "out_dir": "results_ablation",
+  "labels_order": [
+    "%",
+    "+",
+    "aa",
+    "ad",
+    "b",
+    "ba",
+    "bf",
+    "bh",
+    "bk",
+    "br",
+    "fc",
+    "h",
+    "na",
+    "ng",
+    "nn",
+    "no",
+    "ny",
+    "o",
+    "qh",
+    "qo",
+    "qr",
+    "qrr",
+    "qw",
+    "qy",
+    "sd",
+    "sv",
+    "x"
+  ],
+  "split": {
+    "random_state": 42,
+    "test_size": 0.2,
+    "min_count": 50
+  },
+  "conditions": [
+    {
+      "condition": "gold_text",
+      "column": "gold_text",
+      "macro_f1": 0.3107549251638047,
+      "micro_f1": 0.4805421950153039,
+      "accuracy": 0.4805421950153039,
+      "model_path": "results_ablation/model_gold_text.joblib",
+      "per_class_report_csv": "results_ablation/per_class_report_gold_text.csv",
+      "confusion_png": "results_ablation/confusion_gold_text.png",
+      "confusion_norm_png": "results_ablation/confusion_norm_gold_text.png"
+    },
+    {
+      "condition": "gold_alpha_text",
+      "column": "gold_alpha_text",
+      "macro_f1": 0.30780082938674874,
+      "micro_f1": 0.47529514648010496,
+      "accuracy": 0.47529514648010496,
+      "model_path": "results_ablation/model_gold_alpha_text.joblib",
+      "per_class_report_csv": "results_ablation/per_class_report_gold_alpha_text.csv",
+      "confusion_png": "results_ablation/confusion_gold_alpha_text.png",
+      "confusion_norm_png": "results_ablation/confusion_norm_gold_alpha_text.png"
+    },
+    {
+      "condition": "rm_punct_only",
+      "column": "rm_punct_only",
+      "macro_f1": 0.31050798680492825,
+      "micro_f1": 0.4803235679930039,
+      "accuracy": 0.4803235679930039,
+      "model_path": "results_ablation/model_rm_punct_only.joblib",
+      "per_class_report_csv": "results_ablation/per_class_report_rm_punct_only.csv",
+      "confusion_png": "results_ablation/confusion_rm_punct_only.png",
+      "confusion_norm_png": "results_ablation/confusion_norm_rm_punct_only.png"
+    },
+    {
+      "condition": "rm_fillers_only",
+      "column": "rm_fillers_only",
+      "macro_f1": 0.2997336290861746,
+      "micro_f1": 0.4695015303891561,
+      "accuracy": 0.4695015303891561,
+      "model_path": "results_ablation/model_rm_fillers_only.joblib",
+      "per_class_report_csv": "results_ablation/per_class_report_rm_fillers_only.csv",
+      "confusion_png": "results_ablation/confusion_rm_fillers_only.png",
+      "confusion_norm_png": "results_ablation/confusion_norm_rm_fillers_only.png"
+    },
+    {
+      "condition": "rm_discourse_only",
+      "column": "rm_discourse_only",
+      "macro_f1": 0.31043025828951837,
+      "micro_f1": 0.47671622212505466,
+      "accuracy": 0.47671622212505466,
+      "model_path": "results_ablation/model_rm_discourse_only.joblib",
+      "per_class_report_csv": "results_ablation/per_class_report_rm_discourse_only.csv",
+      "confusion_png": "results_ablation/confusion_rm_discourse_only.png",
+      "confusion_norm_png": "results_ablation/confusion_norm_rm_discourse_only.png"
+    },
+    {
+      "condition": "norm_colloq_only",
+      "column": "norm_colloq_only",
+      "macro_f1": 0.3107549251638047,
+      "micro_f1": 0.4805421950153039,
+      "accuracy": 0.4805421950153039,
+      "model_path": "results_ablation/model_norm_colloq_only.joblib",
+      "per_class_report_csv": "results_ablation/per_class_report_norm_colloq_only.csv",
+      "confusion_png": "results_ablation/confusion_norm_colloq_only.png",
+      "confusion_norm_png": "results_ablation/confusion_norm_norm_colloq_only.png"
+    },
+    {
+      "condition": "clean_light",
+      "column": "clean_light",
+      "macro_f1": 0.31050798680492825,
+      "micro_f1": 0.4803235679930039,
+      "accuracy": 0.4803235679930039,
+      "model_path": "results_ablation/model_clean_light.joblib",
+      "per_class_report_csv": "results_ablation/per_class_report_clean_light.csv",
+      "confusion_png": "results_ablation/confusion_clean_light.png",
+      "confusion_norm_png": "results_ablation/confusion_norm_clean_light.png"
+    },
+    {
+      "condition": "clean_heavy",
+      "column": "clean_heavy",
+      "macro_f1": 0.29328198183171533,
+      "micro_f1": 0.45769567118495846,
+      "accuracy": 0.45769567118495846,
+      "model_path": "results_ablation/model_clean_heavy.joblib",
+      "per_class_report_csv": "results_ablation/per_class_report_clean_heavy.csv",
+      "confusion_png": "results_ablation/confusion_clean_heavy.png",
+      "confusion_norm_png": "results_ablation/confusion_norm_clean_heavy.png"
+    },
+    {
+      "condition": "asr_noise",
+      "column": "asr_noise",
+      "macro_f1": 0.2775789171027958,
+      "micro_f1": 0.4461084390030608,
+      "accuracy": 0.4461084390030608,
+      "model_path": "results_ablation/model_asr_noise.joblib",
+      "per_class_report_csv": "results_ablation/per_class_report_asr_noise.csv",
+      "confusion_png": "results_ablation/confusion_asr_noise.png",
+      "confusion_norm_png": "results_ablation/confusion_norm_asr_noise.png"
+    }
+  ]
+}

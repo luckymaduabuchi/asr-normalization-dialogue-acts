@@ -1,0 +1,23 @@
+{
+  "dataset": "utterances_with_ablations.csv",
+  "seed": 42,
+  "B": 300,
+  "min_count": 50,
+  "conditions": [
+    "gold_text",
+    "rm_fillers_only",
+    "clean_heavy"
+  ],
+  "baseline": "gold_text",
+  "n_rows_after_filtering": 43763,
+  "n_train_rows": 35712,
+  "n_test_rows": 8051,
+  "n_train_conversations": 924,
+  "n_test_conversations": 231,
+  "files": {
+    "bootstrap_scores_long_csv": "results_bootstrap/bootstrap_scores_long.csv",
+    "bootstrap_summary_csv": "results_bootstrap/bootstrap_summary.csv",
+    "bootstrap_deltas_csv": "results_bootstrap/bootstrap_deltas.csv",
+    "significance_tests_csv": "results_bootstrap/significance_tests.csv"
+  }
+}

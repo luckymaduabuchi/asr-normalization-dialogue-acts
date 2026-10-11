@@ -1,0 +1,10 @@
+{
+  "label": "b",
+  "point_estimate_f1_rm_fillers": 0.36530880420499345,
+  "point_estimate_f1_clean_heavy": 0.2719546742209632,
+  "mean_delta_rm_minus_heavy": 0.09298035216593528,
+  "ci_lo": 0.06532362518757179,
+  "ci_hi": 0.12267044652657179,
+  "n_bootstrap": 2000,
+  "n_favor_rm_fillers": 2000
+}

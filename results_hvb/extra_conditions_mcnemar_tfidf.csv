@@ -1,0 +1,4 @@
+comparison,dataset,model,gold_only_correct,other_only_correct,statistic,p_value
+gold_text vs rm_fillers_strict,hvb,TF-IDF+LR,63,20,20.0,2.4306979592052185e-06
+gold_text vs clean_heavy_strict,hvb,TF-IDF+LR,62,23,23.0,2.7713609491245692e-05
+gold_text vs pragmatic_norm,hvb,TF-IDF+LR,4,10,4.0,0.1795654296875

@@ -1,0 +1,22 @@
+{
+  "dataset": "wylupek/mrda-corpus",
+  "label_col": "general_da",
+  "min_count": 50,
+  "labels_kept": [
+    "%",
+    "b",
+    "fg",
+    "fh",
+    "h",
+    "qh",
+    "qo",
+    "qr",
+    "qrr",
+    "qw",
+    "qy",
+    "s"
+  ],
+  "n_train_rows": 75067,
+  "n_test_rows": 16702,
+  "split_note": "Uses the dataset's own canonical train/test split (meeting-disjoint); speaker codes are reused across meetings in this release so meeting id cannot be recovered independently to build a custom split."
+}

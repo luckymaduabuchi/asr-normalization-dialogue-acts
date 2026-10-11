@@ -1,0 +1,6 @@
+model,dataset,comparison,gold_macro_f1,asr_real_macro_f1,baseline_only_correct,other_only_correct,p_value
+RoBERTa,hvb,gold_text vs asr_real,,0.7002244543789496,225,70,3.915376451688556e-20
+BERT,hvb,gold_text vs asr_real,,0.6947291847481671,238,51,4.824908250463568e-30
+ALBERT,hvb,gold_text vs asr_real,,0.695946547595012,239,65,1.5386860299442944e-24
+GPT-2,hvb,gold_text vs asr_real,,0.6764519906360218,269,200,0.001661274974884374
+BiLSTM,hvb,gold_text vs asr_real,,0.6581498173656708,442,252,5.23598634758442e-13

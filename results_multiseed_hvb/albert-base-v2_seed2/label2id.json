@@ -1,0 +1,18 @@
+{
+  "acknowledge": 0,
+  "answer_agree": 1,
+  "answer_dis": 2,
+  "answer_general": 3,
+  "backchannel": 4,
+  "disfluency": 5,
+  "other": 6,
+  "question_check": 7,
+  "question_general": 8,
+  "question_repeat": 9,
+  "self": 10,
+  "statement_close": 11,
+  "statement_general": 12,
+  "statement_open": 13,
+  "statement_problem": 14,
+  "thanks": 15
+}

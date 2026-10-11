@@ -1,0 +1,4 @@
+condition,column,model,dataset,macro_f1,micro_f1,accuracy,status
+rm_fillers_strict,rm_fillers_strict,TF-IDF+LR,switchboard,0.3039085856611929,0.4724529951902055,0.4724529951902055,OK
+clean_heavy_strict,clean_heavy_strict,TF-IDF+LR,switchboard,0.30341037070400306,0.4731088762571054,0.4731088762571054,OK
+pragmatic_norm,pragmatic_norm,TF-IDF+LR,switchboard,0.3107549251638047,0.4805421950153039,0.4805421950153039,OK

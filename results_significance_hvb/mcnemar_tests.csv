@@ -1,0 +1,3 @@
+comparison,both_correct,baseline_only_correct,other_only_correct,both_wrong,statistic,p_value,exact
+gold_text vs rm_fillers_only,5154,93,27,829,27.0,1.1130505022660528e-09,True
+gold_text vs clean_heavy,5157,90,26,830,26.0,1.894640656756038e-09,True

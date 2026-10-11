@@ -1,0 +1,4 @@
+comparison,dataset,model,gold_only_correct,other_only_correct,statistic,p_value
+gold_text vs rm_fillers_strict,switchboard,TF-IDF+LR,211,137,137.0,8.606885935649425e-05
+gold_text vs clean_heavy_strict,switchboard,TF-IDF+LR,207,139,139.0,0.0003032909823774041
+gold_text vs pragmatic_norm,switchboard,TF-IDF+LR,0,0,0.0,1.0

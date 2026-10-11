@@ -1,0 +1,72 @@
+{
+  "labels_order": [
+    "%",
+    "b",
+    "fg",
+    "fh",
+    "h",
+    "qh",
+    "qo",
+    "qr",
+    "qrr",
+    "qw",
+    "qy",
+    "s"
+  ],
+  "conditions": [
+    {
+      "condition": "gold_text",
+      "macro_f1": 0.40897722383498825,
+      "micro_f1": 0.6453718117590708,
+      "accuracy": 0.6453718117590708
+    },
+    {
+      "condition": "gold_alpha_text",
+      "macro_f1": 0.40897722383498825,
+      "micro_f1": 0.6453718117590708,
+      "accuracy": 0.6453718117590708
+    },
+    {
+      "condition": "rm_punct_only",
+      "macro_f1": 0.40897722383498825,
+      "micro_f1": 0.6453718117590708,
+      "accuracy": 0.6453718117590708
+    },
+    {
+      "condition": "norm_colloq_only",
+      "macro_f1": 0.40897722383498825,
+      "micro_f1": 0.6453718117590708,
+      "accuracy": 0.6453718117590708
+    },
+    {
+      "condition": "rm_discourse_only",
+      "macro_f1": 0.4052874690448009,
+      "micro_f1": 0.6358519937732008,
+      "accuracy": 0.6358519937732008
+    },
+    {
+      "condition": "rm_fillers_only",
+      "macro_f1": 0.36420771470974983,
+      "micro_f1": 0.5722069213267872,
+      "accuracy": 0.5722069213267872
+    },
+    {
+      "condition": "clean_light",
+      "macro_f1": 0.40897722383498825,
+      "micro_f1": 0.6453718117590708,
+      "accuracy": 0.6453718117590708
+    },
+    {
+      "condition": "clean_heavy",
+      "macro_f1": 0.36131803380955246,
+      "micro_f1": 0.5711890791521973,
+      "accuracy": 0.5711890791521973
+    },
+    {
+      "condition": "asr_noise",
+      "macro_f1": 0.3026805092590072,
+      "micro_f1": 0.5556819542569752,
+      "accuracy": 0.5556819542569752
+    }
+  ]
+}

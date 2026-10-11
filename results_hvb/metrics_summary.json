@@ -1,0 +1,76 @@
+{
+  "labels_order": [
+    "acknowledge",
+    "answer_agree",
+    "answer_dis",
+    "answer_general",
+    "backchannel",
+    "disfluency",
+    "other",
+    "question_check",
+    "question_general",
+    "question_repeat",
+    "self",
+    "statement_close",
+    "statement_general",
+    "statement_open",
+    "statement_problem",
+    "thanks"
+  ],
+  "conditions": [
+    {
+      "condition": "gold_text",
+      "macro_f1": 0.7133888650171214,
+      "micro_f1": 0.8597411109290513,
+      "accuracy": 0.8597411109290513
+    },
+    {
+      "condition": "gold_alpha_text",
+      "macro_f1": 0.7133888650171214,
+      "micro_f1": 0.8597411109290513,
+      "accuracy": 0.8597411109290513
+    },
+    {
+      "condition": "rm_punct_only",
+      "macro_f1": 0.7133888650171214,
+      "micro_f1": 0.8597411109290513,
+      "accuracy": 0.8597411109290513
+    },
+    {
+      "condition": "norm_colloq_only",
+      "macro_f1": 0.7150362699823074,
+      "micro_f1": 0.8607242339832869,
+      "accuracy": 0.8607242339832869
+    },
+    {
+      "condition": "rm_discourse_only",
+      "macro_f1": 0.7158044563073928,
+      "micro_f1": 0.8610519416680321,
+      "accuracy": 0.8610519416680321
+    },
+    {
+      "condition": "rm_fillers_only",
+      "macro_f1": 0.660337008097521,
+      "micro_f1": 0.8489267573324595,
+      "accuracy": 0.8489267573324595
+    },
+    {
+      "condition": "clean_light",
+      "macro_f1": 0.7133888650171214,
+      "micro_f1": 0.8597411109290513,
+      "accuracy": 0.8597411109290513
+    },
+    {
+      "condition": "clean_heavy",
+      "macro_f1": 0.6604831560005231,
+      "micro_f1": 0.8492544650172047,
+      "accuracy": 0.8492544650172047
+    },
+    {
+      "condition": "asr_noise",
+      "macro_f1": 0.659423372001502,
+      "micro_f1": 0.8174668195969196,
+      "accuracy": 0.8174668195969196
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+condition,column,model,dataset,macro_f1,micro_f1,accuracy,status
+rm_fillers_strict,rm_fillers_strict,TF-IDF+LR,mrda,0.3700699368937214,0.5766974015088013,0.5766974015088013,OK
+clean_heavy_strict,clean_heavy_strict,TF-IDF+LR,mrda,0.37020951541337704,0.575978924679679,0.575978924679679,OK

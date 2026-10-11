@@ -1,0 +1,26 @@
+{
+  "dataset": "asapp/slue-phase-2 (hvb config)",
+  "min_count": 50,
+  "labels_kept": [
+    "acknowledge",
+    "answer_agree",
+    "answer_dis",
+    "answer_general",
+    "backchannel",
+    "disfluency",
+    "other",
+    "question_check",
+    "question_general",
+    "question_repeat",
+    "self",
+    "statement_close",
+    "statement_general",
+    "statement_open",
+    "statement_problem",
+    "thanks"
+  ],
+  "n_train_rows": 11303,
+  "n_test_rows": 6103,
+  "split_note": "Uses the dataset's own canonical train/test split (issue_id-disjoint by construction).",
+  "multilabel_note": "dialog_acts is multi-label (~40% of utterances have >1 tag); first label used as primary label."
+}
