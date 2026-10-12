@@ -6,13 +6,13 @@ mrda_icsi_audio/
 /utterances.csv
 /utterances_text_conditions.csv
 /utterances_with_ablations.csv
-results_mrda/utterances_mrda.csv
-results_hvb/utterances_hvb.csv
-results_hvb/hvb_filtered_index.csv
-results_mrda_real/scoped_utterances.csv
-results_mrda_real/test_df_ordered.csv
-results_mrda_real/scoped5_backup/
-results_mrda_meetingsplit/scoped_utterances_with_conditions.csv
+results/mrda/tfidf/utterances_mrda.csv
+results/hvb/tfidf/utterances_hvb.csv
+results/hvb/tfidf/hvb_filtered_index.csv
+results/legacy/mrda_real/scoped_utterances.csv
+results/legacy/mrda_real/test_df_ordered.csv
+results/legacy/mrda_real/scoped5_backup/
+results/mrda/meetingsplit/scoped_utterances_with_conditions.csv
 
 # Manuscript sources and templates
 IEEE_Conference_Template__3_/*

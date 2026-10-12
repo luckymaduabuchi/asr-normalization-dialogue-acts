@@ -1,5 +1,0 @@
-condition,column,macro_f1,micro_f1,accuracy,model_path,report_path,confusion_path,confusion_norm_path
-gold_text,gold_text,0.3107549251638047,0.4805421950153039,0.4805421950153039,results/model_gold_text.joblib,results/per_class_report_gold_text.csv,results/confusion_gold_text.png,results/confusion_norm_gold_text.png
-clean_light,clean_light,0.31050798680492825,0.4803235679930039,0.4803235679930039,results/model_clean_light.joblib,results/per_class_report_clean_light.csv,results/confusion_clean_light.png,results/confusion_norm_clean_light.png
-gold_alpha_text,gold_alpha_text,0.30780082938674874,0.47529514648010496,0.47529514648010496,results/model_gold_alpha_text.joblib,results/per_class_report_gold_alpha_text.csv,results/confusion_gold_alpha_text.png,results/confusion_norm_gold_alpha_text.png
-clean_heavy,clean_heavy,0.29328198183171533,0.45769567118495846,0.45769567118495846,results/model_clean_heavy.joblib,results/per_class_report_clean_heavy.csv,results/confusion_clean_heavy.png,results/confusion_norm_clean_heavy.png
