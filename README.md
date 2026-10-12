@@ -62,8 +62,7 @@ be recomputed without retraining.
 
 Any directory containing a `SUPERSEDED.md` — `results/legacy/` — holds
 earlier results that are not used in the paper; see that file for why each
-is kept. The manuscript source and bibliography are in
-`IEEE_Conference_Template__3_/`.
+is kept. The compiled manuscript is `paper/asilomar_2026_paper.pdf`.
 
 ## What is not included
 

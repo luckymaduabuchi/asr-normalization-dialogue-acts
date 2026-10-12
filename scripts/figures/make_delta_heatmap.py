@@ -41,5 +41,5 @@ cbar.set_label("Delta (positive = filler removal hurt)")
 
 fig.tight_layout()
 fig.savefig("results/cross_corpus/summary/delta_heatmap.png", dpi=200)
-fig.savefig("IEEE_Conference_Template__3_/delta_heatmap.png", dpi=200)
+fig.savefig("paper/delta_heatmap.png", dpi=200)
 print("Saved results/cross_corpus/summary/delta_heatmap.png (both copies)")

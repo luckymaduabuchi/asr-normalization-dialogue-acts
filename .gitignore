@@ -14,14 +14,13 @@ results/legacy/mrda_real/test_df_ordered.csv
 results/legacy/mrda_real/scoped5_backup/
 results/mrda/meetingsplit/scoped_utterances_with_conditions.csv
 
-# Manuscript sources and templates
-IEEE_Conference_Template__3_/*
-!IEEE_Conference_Template__3_/asilomar_2026_paper.tex
-!IEEE_Conference_Template__3_/asilomar_refs.bib
+# Manuscript sources and templates (only the compiled PDF is tracked)
+paper/*
 /conll.tex
 /custom.bib
 *.pdf
 *.pptx
+!paper/asilomar_2026_paper.pdf
 
 # Training artifacts
 *.log

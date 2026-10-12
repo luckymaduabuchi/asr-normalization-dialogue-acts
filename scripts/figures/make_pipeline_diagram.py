@@ -153,5 +153,5 @@ box(131, 44.5, 21, 20,
 arrow(141, 44.5, 129, eval_y + eval_h / 2, color="#2a7a2a")
 
 fig.tight_layout()
-fig.savefig("IEEE_Conference_Template__3_/pipeline_diagram_v2.png", dpi=200)
+fig.savefig("paper/pipeline_diagram_v2.png", dpi=200)
 print("Saved pipeline_diagram_v2.png")
